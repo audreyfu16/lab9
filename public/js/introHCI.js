@@ -13,8 +13,10 @@ function initializePage() {
 // Function that is called when the server responds to the AJAX call
 function onServerResponse(data){
     var labElementId = getLabElementId(data.id);
-    var labElement = $(labElementId);
-    labElement.css({'background': 'yellow'});
+    if(labElementID == "lab-9"){
+        var labElement = $(labElementId);
+        labElement.css({'background': 'yellow'});
+    }
 }
 
 
